@@ -149,9 +149,7 @@
     <ClInclude Include="Form1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Lista.h" />
     <ClInclude Include="Nodo.h" />
-    <ClInclude Include="NodoPila.h" />
     <ClInclude Include="Pila.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
@@ -163,9 +161,7 @@
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CppCLR_WinformsProjekt.cpp" />
     <ClCompile Include="Form1.cpp" />
-    <ClCompile Include="Lista.cpp" />
     <ClCompile Include="Nodo.cpp" />
-    <ClCompile Include="NodoPila.cpp" />
     <ClCompile Include="Pila.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

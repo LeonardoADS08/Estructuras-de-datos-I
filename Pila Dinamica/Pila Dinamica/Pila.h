@@ -10,11 +10,12 @@ private:
 	Nodo<T> *BuscarNodo() { return new Nodo<T>; }
 	void LiberarNodo(Nodo<T> *val) { delete(val); }
 public:
-	Pila();
+	Pila() { _dato = nullptr; }
 
 	bool Vacia() { return _dato == nullptr; }
 	bool Insertar(Nodo<T> val);
-	bool Tope(Nodo<T> &val);
+	bool Eliminar(Nodo<T> &val);
+	Nodo<T> Tope() { return *_dato; }
 };
 
 template<class T>
@@ -32,7 +33,7 @@ bool Pila<T>::Insertar(Nodo<T> val)
 
 
 template<class T>
-bool Pila<T>::Tope( Nodo<T> &val)
+bool Pila<T>::Eliminar( Nodo<T> &val)
 {
 	Nodo<T> *y;
 	if (this->Vacia()) return false;

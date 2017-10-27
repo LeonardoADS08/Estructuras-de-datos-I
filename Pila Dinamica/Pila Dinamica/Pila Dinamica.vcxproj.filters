@@ -27,12 +27,6 @@
     <ClInclude Include="Form1.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="NodoPila.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="Lista.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="Nodo.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
@@ -56,12 +50,6 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="Form1.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="NodoPila.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="Lista.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="Nodo.cpp">

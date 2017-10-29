@@ -4,5 +4,6 @@
 //
 
 #pragma once
-
+#include <msclr/marshal.h>
+#include <iostream>
 // TODO: Hier auf zusätzliche Header, die das Programm erfordert, verweisen.

@@ -146,9 +146,12 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Form1.h">
+    <ClInclude Include="Aplicacion.h" />
+    <ClInclude Include="PilaForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Interfaz.h" />
+    <ClInclude Include="Memoria.h" />
     <ClInclude Include="Nodo.h" />
     <ClInclude Include="Pila.h" />
     <ClInclude Include="resource.h" />
@@ -158,9 +161,12 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Aplicacion.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CppCLR_WinformsProjekt.cpp" />
     <ClCompile Include="Form1.cpp" />
+    <ClCompile Include="Interfaz.cpp" />
+    <ClCompile Include="Memoria.cpp" />
     <ClCompile Include="Nodo.cpp" />
     <ClCompile Include="Pila.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -172,6 +178,11 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PilaForm.resx">
+      <DependentUpon>PilaForm.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

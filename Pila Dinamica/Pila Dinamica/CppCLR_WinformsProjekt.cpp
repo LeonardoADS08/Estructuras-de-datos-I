@@ -9,7 +9,7 @@
 //    return 0;
 //}
 #include "stdafx.h"
-#include "Form1.h"
+#include "PilaForm.h"
 
 using namespace System;
 using namespace System::Windows::Forms;

@@ -24,13 +24,22 @@
     <ClInclude Include="resource.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="Form1.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="Nodo.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="Cola.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Aplicacion.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="ColaForm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Memoria.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaz.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
@@ -56,6 +65,15 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="Cola.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Aplicacion.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Memoria.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Interfaz.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

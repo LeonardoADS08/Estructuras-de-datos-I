@@ -10,14 +10,19 @@ private:
 
 	Nodo<T> *BuscarNodo() { return new Nodo<T>; }
 	void LiberarNodo(Nodo<T> *val) { delete(val); }
+
 public:
-	Cola() { _frente = _final = nullptr; }
+	Cola() { _frente = nullptr; _final = nullptr; }
 
 	bool Vacia() { return _final == nullptr; }
 
 	bool Insertar(Nodo<T> val);
 	bool Eliminar(Nodo<T> &val);
 	Nodo<T> Frente();
+	void Limpiar();
+
+	void Objeto(Cola<T> val) { *this = val; }
+	Cola<T> Objeto() { return *this; }
 };
 
 template<class T>
@@ -26,9 +31,9 @@ bool Cola<T>::Insertar(Nodo<T> val)
 	Nodo<T> *nuevoElemento = BuscarNodo();
 	
 	nuevoElemento->Apuntador(nullptr);
-	nuevoElemento->Elemento(val);
+	nuevoElemento->Elemento(val.Elemento());
 	
-	if (_final == nullptr) _frente = nuevoElemento;
+	if (Vacia()) _frente = nuevoElemento;
 	else _final->Apuntador(nuevoElemento);
 
 	_final = nuevoElemento;
@@ -39,7 +44,7 @@ template<class T>
 bool Cola<T>::Eliminar(Nodo<T> &val)
 {
 	if (Vacia()) return false;
-	Nodo<T> *y;
+	Nodo<T> *y = nullptr;
 
 	val.Elemento(_frente->Elemento());
 	val.Apuntador(nullptr);
@@ -54,3 +59,11 @@ bool Cola<T>::Eliminar(Nodo<T> &val)
 
 template<class T>
 Nodo<T> Cola<T>::Frente() { return *_final; }
+
+template<class T>
+void Cola<T>::Limpiar()
+{
+	Nodo<T> temp;
+	while (!Vacia())
+		Eliminar(temp);
+}
